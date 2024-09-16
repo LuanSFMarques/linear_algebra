@@ -29,4 +29,10 @@ def sys_creator(lines:int, col:int, scale_range:int, xs_range:int) -> tuple:
         
         
 
-a, b = sys_creator(2,2,4,5)
+a, b = sys_creator(3,3,10,10)
+
+print(f'A = \n{a}\n')
+print(f'B = \n{b}\n')
+
+result = np.dot(np.linalg.inv(a),b)
+print(f'Result = \n{result}')
