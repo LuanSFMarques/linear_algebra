@@ -1,19 +1,3 @@
 import numpy as np
-
-# Ax = b
-# x = b/A
-# x = b * A^(-1)
-
-A = np.array([
-    [3,-1],
-    [2,3]
-    ])
-
-B = np.array([
-    [7],
-    [1]
-    ])
-
-X = np.dot(np.linalg.inv(A), B)
-
-#print(X)
+A,B = np.array([[2,-3,5],[-1,2,-3],[-3,-1,3]]),np.array([[20],[-11],[6]])
+print(np.dot(np.linalg.inv(A), B))

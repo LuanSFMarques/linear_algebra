@@ -27,9 +27,7 @@ def sys_creator(lines:int, col:int, scale_range:int, xs_range:int) -> tuple:
 
     return (lin_system,result_system)
         
-        
-
-a, b = sys_creator(3,3,10,10)
+a, b = sys_creator(2,2,5,5)
 
 print(f'A = \n{a}\n')
 print(f'B = \n{b}\n')
